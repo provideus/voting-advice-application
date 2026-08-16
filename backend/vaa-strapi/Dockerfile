@@ -17,7 +17,7 @@ COPY .yarn ./.yarn
 COPY backend backend
 COPY docs docs
 COPY frontend frontend
-COPY packages packages
+# COPY packages packages
 RUN yarn install --immutable
 
 FROM base AS shared
