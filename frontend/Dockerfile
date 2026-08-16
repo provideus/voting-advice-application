@@ -52,4 +52,6 @@ WORKDIR /opt
 RUN yarn workspace @openvaa/frontend build
 
 EXPOSE 3000
+ENV PORT=3000
+ENV HOSTNAME="0.0.0.0"
 CMD node ./frontend/build/index.js
